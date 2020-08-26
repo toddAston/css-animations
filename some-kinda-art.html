@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    html {
+        /*background: radial-gradient(100rem circle at 50%, #FFE460 8%, #FF7519 90%);*/
+        animation: day-to-night 20s linear 0s infinite;
+    }
+
+.first {
+    /*display: inline-block;*/
+    position: absolute;
+    top: -15rem;
+    left: -15rem;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+    border-radius: 50%;
+}
+
+.ocean {
+  position: absolute;
+  background-color: aqua;
+  height: 25%;
+  width:100vw;
+  bottom: 0px;
+  left: 0px;
+}
+
+.stars {
+  position: absolute;
+  background-color: black;
+  background-image: url(https://thumbs.gfycat.com/RingedSpicyKodiakbear-size_restricted.gif);
+  height: 75%;
+  width:100vw;
+  top: 0px;
+  left: 0px;
+  z-index: -10;
+}
+
+@keyframes day-to-night {
+    0%   {background-color: #fbd33f;}
+    100%  {background-color: #000000;}
+}
+
+@keyframes myfirst {
+  0%   {background-color:#FFE460; left:-15rem; top:-15rem;}
+  100%  {background-color:#FF7519; left:50rem; top:50rem;}
+}
+
+@keyframes water {
+  0%   {background-color:aqua;}
+  100%  {background-color:darkblue;}
+}
+
+@keyframes stars {
+  0%   {opacity: 0;}
+  100%  {opacity: .80;}
+}
+
+.first {
+  animation: myfirst 20s linear 0s infinite;
+}
+
+.ocean {
+  animation: water 20s linear 0s infinite;
+}
+
+.stars {
+  animation: stars 20s linear 0s infinite;
+}
+
+</style>
+</head>
+<body>
+
+<div class="first"></div>
+<div class="ocean"></div>
+<div class="stars"></div>
+
+
+</body>
+</html>
+
